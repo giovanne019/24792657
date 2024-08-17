@@ -1,3 +1,4 @@
+//1)
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,4 +8,19 @@ int main(){
     printf("Digite o número de visitantes que entraram hoje: ");
         scanf("%i", &visitantes);
     printf("%i" " visitantes entraram no dia de hoje!");
+}
+//2)
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float receita, despesa, total;
+    
+    printf("Insira sua receita: ");
+        scanf("%f", &receita);
+    printf("Insira sua despesa: ");
+        scanf("%f", &despesa);
+    total = (receita - despesa);
+    printf("Seu saldo no dia de hoje é de: %.lf\n", total);
+    return (0);
 }
