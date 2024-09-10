@@ -1,0 +1,169 @@
+01)a.
+#include <stdio.h>
+
+    int main(){
+        float n = 4000000000;
+        printf("%f\n", n);
+    return 0;
+}
+
+b.
+#include <stdio.h>
+
+    int main(){
+        int a;
+        printf("%d\n", a);
+    return 0;
+}
+
+C.
+#include <stdio.h>
+
+    int main(){
+        printf("%d\n", 4);
+        printf("%d\n", 2);
+    return 0;
+}
+
+d.
+#include <stdio.h>
+
+    int main(){
+        int a;
+        scanf("%d", &a);
+        printf("%d", a);
+    return 0;
+}
+
+02)a.
+#include <stdio.h>
+
+    int main(){
+        int num1, num2, num3;
+        printf("Digite o primeiro numero: ");
+            scanf("%d", &num1);
+        printf("Digite o segundo numero: ");
+            scanf("%d", &num2);
+        printf("Digite o terceiro numero: ");
+            scanf("%d", &num3);
+
+        printf("%d\n" "%d\n" "%d\n", num3, num2, num1);
+    return 0;
+}
+
+b.
+#include <stdio.h>
+
+    int main(){
+        char nome[100];
+        printf("Ola eu sou o Numero 1, como e seu nome?\n");
+            scanf("%s", &nome);
+        printf("Bem-vindo ao clube %s", nome);
+    return 0;
+}
+
+c.
+#include <stdio.h>
+#include <stdlib.h>
+
+    int main(){
+        char nome[100];
+        float idade, dias;
+
+        printf("Digite seu nome:\n");
+        scanf("%s", &nome);
+        printf("Digite sua idade\n");
+        scanf("%f", &idade);
+
+        dias = idade*365;
+        printf("Sua idade em dias e aproximadamente %.f dias", dias);
+        return 0;
+}
+
+d.
+#include <stdio.h>
+#include <stdlib.h>
+
+    int main(){
+    float raio, area;
+
+        printf("Qual a area do circulo \n");
+        scanf("%f", &raio);
+
+        area = 3.14 *(raio*raio);
+        printf("A area do circulo e igual a %.1f", area);
+        return 0;
+    }
+
+e.
+#include <stdio.h>
+#include <stdlib.h>
+
+    int main(){
+    float largura, altura, m2, quantidadetinta, latas;
+
+        printf("Qual a largura da parede?\n");
+        scanf("%f", &largura);
+        printf("Qual a altura da parede?\n");
+        scanf("%f", &altura);
+
+        m2 = largura*altura;
+        quantidadetinta = 300*m2;
+        latas = quantidadetinta/2000;
+
+        printf("A quantidade de latas de tinta necessarias e %.f", latas);
+        return 0;
+    }
+
+f.
+#include <stdio.h>
+#include <stdlib.h>
+
+    int main(){
+    float farenheit, centigrados;
+
+        printf("Digite a temperatura em graus Farenheit:\n");
+        scanf("%f", &farenheit);
+
+        centigrados = (farenheit - 32)*5/9;
+        printf("A temperatura em graus Centigrados e de %.1f graus", centigrados);
+        return 0;
+    }
+g.
+#include <stdio.h>
+#include <stdlib.h>
+
+    int main(){
+    float pressao, volume, temperatura, massa, massaDeAr;
+
+        printf("Digite a pressao do pneu:\n");
+        scanf("%f", &pressao);
+        printf("Digite o volume do pneu:\n");
+        scanf("%f", &volume);
+        printf("Digite a temperatura do pneu:\n");
+        scanf("%f", &temperatura);
+
+        massa =  pressao*volume/(temperatura+  460);
+        massaDeAr = 0.37*massa;
+        printf("A massa de ar desse pneu e de %f", massaDeAr);
+        return 0;
+}
+
+h.
+#include <stdio.h>
+
+    int main(){
+        int primeiroTermo, razao, numero, termoN;
+
+        printf("Digite o primeiro termo da PA:\n");
+            scanf("%d", &primeiroTermo);
+        printf("Digite a razao da PA:\n");
+            scanf("%d", &razao);
+        printf("Digite um numero:\n");
+            scanf("%d", &numero);
+
+    termoN = primeiroTermo+(numero - 1)*razao;
+        printf("O N-esimo termo da PA e: %d\n", numero, termoN);
+
+    return 0;
+    }
